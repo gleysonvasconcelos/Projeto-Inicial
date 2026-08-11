@@ -18,7 +18,9 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  min-height: 100vh; /* Corrigido para min-height */
 }
+
 
 /* Espaço adicionado entre body e * e nome da fonte corrigido */
 body * {
@@ -80,13 +82,14 @@ top:50%;
 left:0;
 z-index:1;
 transform:translateY(-50%);
-
+animation: slide-out 0.2s;
 }
 .light #switch button{
-  right:0;
-  left:initial;
+  animation: slide-in 0.4s forwards;
 }
-
+#switch button:hover{
+  outline:8px solid var(--highlight-color);
+}
 
 #switch span{
 display:block;
@@ -176,3 +179,31 @@ footer {
   gap: 16px;
   padding: 24px 0;
 }
+@media(min-width: 700px){
+   :root{
+    --bg-url: url('./assets/assets/bg-desktop.jpg'); /* Adicionada pasta e extensão .jpg */
+  }
+  .light {
+    --bg-url: url('./assets/assets/bg-desktop-light.jpg'); /* Adicionada pasta e extensão .jpg */
+  }
+}
+/*animation*/
+@keyframes slide-in{
+from{
+  left:0;
+}
+to{
+  left:50%;
+} 
+}
+
+@keyframes slide-out{
+  from{
+    left:50%;
+  }
+  to{
+    left:0;
+  }
+}
+
+
