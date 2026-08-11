@@ -82,10 +82,10 @@ body * {
   z-index: 1;
   transform: translateY(-50%);
 
-  animation: slide-out 0.2s;
+  animation: slide-out 0.2s forwards;
 }
 
-html.light #switch button {
+.light #switch button {
   background: white url('./assets/sun.svg') no-repeat center;
   animation: slide-in 0.2s forwards;
 }
