@@ -73,6 +73,8 @@ body * {
   width: 32px;
   height: 32px;
   background: white url('./assets/moon.svg') no-repeat center;
+  /* Se a lua for branca, altere a cor do botão para dar contraste: */
+  background-color: rgba(255, 255, 255, 0.1);
   border: 0;
   border-radius: 50%;
 
@@ -87,6 +89,7 @@ body * {
 
 .light #switch button {
   background: white url('./assets/sun.svg') no-repeat center;
+  background-color: white; /* No modo claro o sol escuro/preto se destaca no branco */
   animation: slide-in 0.2s forwards;
 }
 
