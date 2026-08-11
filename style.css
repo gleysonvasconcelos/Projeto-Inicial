@@ -40,7 +40,7 @@ body * {
   width: 100%;
   max-width:588px;
   margin: 56px auto 0 auto;
-  padding:0 24px
+  padding:0 24px;
 
 }
 
@@ -187,21 +187,21 @@ footer {
     --bg-url: url('./assets/bg-desktop-light.jpg'); /* Adicionada pasta e extensão .jpg */
   }
 }
-/*animation*/
-@keyframes slide-in{
-from{
-  left:0;
-}
-to{
-  left:50%;
-} 
+/* animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
 }
 
-@keyframes slide-out{
-  from{
-    left:50%;
+@keyframes slide-out {
+  from {
+    left: 50%;
   }
-  to{
-    left:0;
+  to {
+    left: 0;
   }
 }
