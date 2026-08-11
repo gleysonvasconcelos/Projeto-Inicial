@@ -70,7 +70,6 @@ body * {
 }
 
 #switch button {
- #switch button {
   width: 32px;
   height: 32px;
   background: white url('./assets/moon.svg') no-repeat center;
@@ -86,16 +85,10 @@ body * {
   animation: slide-out 0.2s forwards;
 }
 
-html.light #switch button,
 .light #switch button {
   background: white url('./assets/sun.svg') no-repeat center;
   animation: slide-in 0.2s forwards;
 }
-
-.light #switch button {
-  background: white url('./assets/sun.svg') no-repeat center;
-  background-color: white; /* No modo claro o sol escuro/preto se destaca no branco */
-  animation: slide-in 0.2s forwards;
 }
 
 #switch button:hover {
